@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -10,18 +11,18 @@ const Contact = () => {
           </span>
         </h1>
         <p className="text-center text-lg font-semibold text-gray-500">
-        Got ideas? Let’s make them happen
+          Got ideas? Let's make them happen
         </p>
 
-        <a
-          href="mailto:bilaltech2112@gmail.com"
+        <Link
+          to="mailto:bilaltech2112@gmail.com"
           className="text-nowrap rounded-lg border border-indigo-600 bg-black px-5 py-3 text-lg font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-indigo-600"
         >
           Contact Me
-        </a>
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
